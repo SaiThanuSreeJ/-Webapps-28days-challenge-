@@ -1,0 +1,30 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    background-color: darkslategray;
+    padding:20px;
+    text-align: center;
+    
+}
+.head{
+    font-size: xx-large;
+    font-style:italic;
+}
+.main-container2{
+    background-color: rgb(163, 202, 128);
+    height:100px;
+    width:1050px;
+    height:450px;
+    margin-left:450px;
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+   
+   
+    
+}
+
