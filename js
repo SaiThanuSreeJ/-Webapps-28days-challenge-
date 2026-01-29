@@ -59,7 +59,6 @@ else console.log("C grade");
 
 
 class details{
-
     int 
 
 }
