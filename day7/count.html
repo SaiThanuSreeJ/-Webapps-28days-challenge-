@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+
+body{
+    background-color: rgb(1, 1, 42);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 300px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.zero{
+    color: rgb(232, 236, 240);
+    font-size: xx-large;
+    font-family:cursive;
+}
+
+.buttons{
+    background-color: rgb(159, 85, 63);
+    width: 200px;
+    padding: 60px;;
+    text-align: center;
+    border-radius: 20px;    
+
+}
+
+.box{
+    background-color: rgb(3, 92, 92);
+    width:275px;
+    padding: 20px;
+    text-align: center ;
+    border-radius: 20px;
+    margin-top:20px;
+    
+}
+
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+
+
+<body>
+
+    <div class="buttons">
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="reset()">Reset</button>
+    </div>
+
+    <div class="box">
+    <p id="in" class="zero">
+        0
+    </p>
+    </div>
+
+    <script>
+        let val=0;
+        let cp=document.getElementById("in")
+
+        function add(){
+            val+=1;
+            cp.innerHTML=val;
+        }
+
+        function sub(){
+            val-=1;
+            cp.innerHTML=val;
+        }
+
+        function reset(){
+            val=0;
+            cp.innerHTML=val;
+        }
+    </script>
+</body>
+</html>

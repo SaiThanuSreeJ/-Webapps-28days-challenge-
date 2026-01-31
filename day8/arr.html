@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+    .list{
+        width:200px;
+        height: 400px;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+    
+    .item{
+        width:auto;
+        height: 50px;
+        background-color: burlywood;
+        padding:10px;
+        margin-bottom: 5px;
+    }
+
+   </style> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="list">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+
+    </div>
+    
+    <script>
+        let array=["apple","jimmy","cow"];
+        let elements = document.querySelector(".list");
+
+        let html='';
+
+        for(let i=0;i<array.length;i++){
+
+            html+='<div class="item">'+ array[i] +'</div>';
+
+        }
+
+        elements.innerHTML=html;
+        </script>
+</body>
+</html>
